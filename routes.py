@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index.html')
 def index():
-    return render_template('index.html', the_title='TIGER HOME PAGE!! please trigger for god sake  ')
+    return render_template('index.html', the_title='TIGER HOME PAGE!! please trigger for god sake !! ')
 
 @app.route('/symbol.html')
 def symbol():
