@@ -5,11 +5,11 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index.html')
 def index():
-    return render_template('index.html', the_title='Tiger hOME PAGE!! please trigger for GOD SAKE !! ')
+    return render_template('index.html', the_title='Tiger Home Page')
 
 @app.route('/symbol.html')
 def symbol():
-    return render_template('symbol.html', the_title='TIGER AS Symbol!!!!!! ?????')
+    return render_template('symbol.html', the_title='TIGER AS Symbol')
 
 @app.route('/myth.html')
 def myth():
