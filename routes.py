@@ -9,7 +9,7 @@ def index():
 
 @app.route('/symbol.html')
 def symbol():
-    return render_template('symbol.html', the_title='TIGER AS Symbol!!!!!!')
+    return render_template('symbol.html', the_title='TIGER AS Symbol!!!!!! ?????')
 
 @app.route('/myth.html')
 def myth():
