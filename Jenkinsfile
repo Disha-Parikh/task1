@@ -3,11 +3,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
+	sh 'sudo apt-get install python3-pip'
+	sh 'sudo apt-get install -y screen'
+	sh 'sudo apt-get install -y python-virtualenv'
 	sh '''
 		#!/bin/bash
 
-                sudo apt-get -y install python-virtualenv 
-                sudo apt-get install -y screen 
                 virtualenv flask1
                 source flask1/bin/activate
                 nohup python /var/lib/jenkins/workspace/flask/routes.py &
