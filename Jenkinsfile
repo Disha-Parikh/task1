@@ -5,7 +5,7 @@ pipeline {
       steps {
 	sh '''
 		#!/bin/bash
-                sudo apt-get install  python3-pip 
+                sudo apt-get install  python3-pip -y 
                 sudo apt-get -y install python-virtualenv 
                 sudo apt-get install -y screen 
                 virtualenv flask1
