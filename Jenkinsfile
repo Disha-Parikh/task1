@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-             sh '''
+	sh '''
+		#!/bin/bash
                 sudo apt-get install -y python3-pip 
                 sudo apt-get -y install python-virtualenv 
                 sudo apt-get install -y screen 
